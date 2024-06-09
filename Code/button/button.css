@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.BtnBox {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    margin: 5px;
+    width: 6vw;
+    height: 6vh;
+    border-radius: 18%;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.btn-r {
+    border: 2px solid rgb(189, 0, 0);
+    box-shadow: 0px 0px 20px red;
+    background-color: red;
+
+}
+
+.btn-y {
+    border: 2px solid rgb(220, 220, 0);
+    box-shadow: 0px 0px 20px yellow;
+    background-color: yellow;
+
+}
+
+.btn-b {
+    border: 2px solid #0081dd;
+    box-shadow: 0 0 20px #00abf0;
+    background-color: #00abf0;
+
+}
+
+.btn-p {
+    border: 2px solid purple;
+    box-shadow: 0 0 20px purple;
+    background-color: purple;
+
+}
+
+.btn-g {
+    border: 2px solid rgb(0, 87, 0);
+    box-shadow: 0 0 20px green;
+    background-color: green;
+}
+
+.btn-pi {
+    border: 2px solid rgb(255, 148, 166);
+    box-shadow: 0 0 20px pink;
+    background-color: pink;
+}
+
+.btn-bl {
+    border: 2px solid black;
+    box-shadow: 0 0 20px wheat;
+    background-color: black;
+}
+
+.btn-bl:hover {
+    border: 2px solid gray;
+    background-color: black;
+}
+
+.btn-w {
+    border: 2px solid grey;
+    box-shadow: 0 0 20px white;
+    background-color: white;
+    color: #000;
+}
+
+.btn-w:hover {
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width : 915px) {
+    .btn {
+        width: 30vw;
+        height: 5vh;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+
+}
