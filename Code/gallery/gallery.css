@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
 .parent {
     margin: 100px 10px;
     height: 60vh;
     display: flex;
 }
-
-
 .child {
     width: 5%;
     height: 60vh;
@@ -27,7 +24,6 @@
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-
 .child:hover {
     flex-grow: 9;
     border-radius: 10%;
