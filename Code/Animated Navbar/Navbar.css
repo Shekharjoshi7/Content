@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Nav{
+    overflow-y: hidden;
+    background: url('bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+}
+
+.Navbar{
+    position: fixed;
+    bottom: -75px;
+    width: 100vw;
+    height: 20vh;
+    transition: all 0.3s ease;
+}
+
+.Navbar:hover{
+    bottom: 2px;
+
+}
+
+.Navbar li{
+    list-style: none;
+}
+
+.container{
+    z-index: 1;
+    border: 1px solid grey;
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 8vh;
+    margin: auto;
+    margin-top: 62px;
+}
