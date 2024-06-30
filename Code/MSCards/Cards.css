@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+.CardBox{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 45vh 45vh;
+    gap: 4rem;
+    margin-top: 100px;
+    width: 100%;
+}
+.cards{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 18vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    box-shadow: 0px 0px 18px black;
+}
+.ImgBox{
+    border-radius: 50px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.cards .ImgBox img{
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    aspect-ratio:9/16;
+    object-fit: cover;
+    transition: .3s ease;
+}
+.cards img:hover{
+    transform: scale(1.1);
+}
+.desc{
+    height: 100%;
+    padding: 1px 10px;
+    position: absolute;
+    top: 90%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.desc:hover{
+    position:absolute;
+    height: 100%;
+    top: 15%;
+    
+}
+.desc h3{
+    margin-top: 10px;
+    text-align: center; 
+  
+}
+.desc p{
+    margin-top: 10px;
+    text-align: justify;
+    color: rgb(193, 193, 193); 
+    font-size: 0.8rem;
+  
+}
+
+/* Utility */
+.m5{
+    margin: 5px
+}
+
