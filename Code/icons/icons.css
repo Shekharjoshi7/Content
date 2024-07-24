@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar {
+    background-color:rgb(198, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-radius: 25px;
+    width: 60vw;
+}
+
+.nav {
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    width: 5vw;
+    height: 9vh;
+    border-radius: 15px;
+    background-color: rgb(144, 144, 144);
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    overflow: hidden;
+    margin: 0px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item i{
+    font-size: 2rem;
+    transition: scale .3s ease;
+}
+.item:hover > i{
+    scale: 1.1;
+    color: #f1f1f1;
+}
+.item::before{
+    content: '';
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    left: -125%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+.item:nth-child(1)::before{
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+}
+.item:nth-child(2)::before{
+    background-color:  #183678;
+}
+.item:nth-child(3)::before{
+    background-color:  red;
+}
+.item:nth-child(4)::before{
+    background-color: rgb(52,52,52);
+}
+.item:nth-child(5)::before{
+    background-color:  #183678;
+}
+.item:hover::before{
+ animation: slide 0.7s forwards;   
+}
+@keyframes slide {
+    50%{
+        left: 10%;
+        top: -40%;
+    }
+    100%{
+        left: -15%;
+        top: -15%;
+    }
+    
+}
